@@ -1,0 +1,18 @@
+{
+  "name": "mobxcontrols2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/v3v0my2370",
+  "main": "test1/app.tsx",
+  "dependencies": {
+    "mobx": "4.1.0",
+    "mobx-react": "5.0.0",
+    "mobx-react-devtools": "5.0.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  }
+}
