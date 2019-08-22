@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "homepage": "https://codesandbox.io/s/v3v0my2370",
-  "main": "test1/app.tsx",
+  "main": "src/test1/app.tsx",
   "dependencies": {
     "mobx": "4.1.0",
     "mobx-react": "5.0.0",
