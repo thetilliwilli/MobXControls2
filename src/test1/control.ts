@@ -7,6 +7,8 @@ export class BaseControl<TValue> {
   @observable
   public value : TValue;
 
+  protected setValue(value) {this.pointer.value = value;this.value = value;}
+
   constructor(protected pointer: IPointer<TValue>) {
     this.value = pointer.value;
   }
@@ -15,7 +17,7 @@ export class BaseControl<TValue> {
 
 export class IntegerControl extends BaseControl<number> {
   @action.bound
-  public up() { ++this.pointer.value;console.log("up"); }
+  public up() { this.setValue(++this.value); }
   @action.bound
-  public down() { --this.pointer.value; }
+  public down() { this.setValue(--this.value); }
 }
