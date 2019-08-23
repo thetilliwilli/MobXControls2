@@ -1,13 +1,13 @@
-import { observable, computed } from "mobx";
+import { observable } from "mobx";
 import { action } from "mobx";
-import { ValueReference, IValueReference } from "./value-reference";
+import { IPointer } from "./pointer";
 
 export class BaseControl<TValue> {
 
   @observable
   public value : TValue;
 
-  constructor(protected valueRef: IValueReference<TValue>) {
+  constructor(protected valueRef: IPointer<TValue>) {
     this.value = valueRef.value;
   }
 

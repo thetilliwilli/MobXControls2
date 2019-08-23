@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "react-dom";
 import { rawData } from "./raw-data";
-import { ValueReference } from "./value-reference";
+import { Pointer } from "./pointer";
 import { IntegerControl } from "./control";
 import { IntegerView } from "./view";
 
-var ref = new ValueReference(rawData.title, "maxSize");
+var ref = new Pointer(rawData.title, "maxSize");
 var control = new IntegerControl(ref);
 var view = <IntegerView control={control} />;
 
